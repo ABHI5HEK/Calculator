@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey"
+    android:weightSum="3"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/resultTV"
+            android:layout_marginTop="10dp"
+            android:textSize="40dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:text="0"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/expressionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="24dp"
+            android:gravity="right"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+
+            style="@style/buttonBar"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/allClear"
+                android:text="AC"
+                android:onClick="allClear"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/back"
+                android:text="Back"
+                android:onClick="back"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/percent"
+                android:text="%"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/divide"
+                android:text="/"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/buttonBar"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSeven"
+                android:text="7"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnEight"
+                android:text="8"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnNine"
+                android:text="9"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/multiply"
+                android:text="X"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/buttonBar"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnFour"
+                android:text="4"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnFive"
+                android:text="5"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnSix"
+                android:text="6"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/add"
+                android:text="+"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/buttonBar"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnOne"
+                android:text="1"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnTwo"
+                android:text="2"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnThree"
+                android:text="3"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/subtract"
+                android:text="-"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/buttonBar"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/decimal"
+                android:text="."
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnZero"
+                android:text="0"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/btnDoubleZero"
+                android:text="00"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey"
+                style="@style/buttonNumber"/>
+            <Button
+                android:id="@+id/equalTo"
+                android:text="="
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                style="@style/buttonNumber"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
