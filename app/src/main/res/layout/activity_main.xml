@@ -41,6 +41,12 @@
             android:textSize="24dp"
             android:gravity="right"
             android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/hiddenExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
 
     </LinearLayout>
 

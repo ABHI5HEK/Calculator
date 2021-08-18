@@ -56,4 +56,10 @@ class Calculation {
         }
 
     }
+    public fun expressionResolver(expression:String):String{
+        var solvedexpression = expression
+
+
+        return solvedexpression
+    }
 }
